@@ -1,0 +1,66 @@
+
+//all imp questions -- https://eishta.medium.com/
+ch-promise --do all of this questions--imp
+1- https://betterprogramming.pub/10-javascript-promise-challenges-before-you-start-an-interview-c9af8d4144ec --24questions
+2-theoritical - https://in.indeed.com/career-advice/interviewing/javascript-promise-interview-questions      --6questios
+3-https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Questions/blob/master/concepts/Promises.md  --5quetions
+4th --BEST_-GOAT-Questions  https://betterprogramming.pub/10-javascript-promise-challenges-before-you-start-an-interview-c9af8d4144ec                                --10question
+
+this is solution of question -no-10 ans of 4th 
+
+Execution starts: The code runs line by line until it hits something asynchronous.
+Logging "start": The first line console.log('start'); executes, printing "start" to the console.
+Creating promise1: The code creates a promise promise1 using Promise.resolve(). This promise resolves immediately because resolve doesn't involve any asynchronous operations.
+Resolving promise1: Since promise1 resolves right away, the .then() callback gets scheduled for execution in the event loop, but it doesn't run immediately.
+Scheduling timer2: Inside the promise's .then() callback, there's a setTimeout(() => {console.log('timer2')}, 0). This schedules the printing of "timer2" for later, but not necessarily right at that moment.
+Scheduling timer1: The code then encounters setTimeout(() => {console.log('timer1')}, 0). Similar to timer2, this schedules the printing of "timer1" for later as well.
+Logging "end": Finally, the code executes console.log('end');, printing "end" to the console.
+
+
+///async/wait--------
+
+1-- https://javascript.plainenglish.io/5-frontend-interview-questions-to-help-you-master-asynchronous-javascript-3339d0f89fdc
+
+
+
+
+*--------CALL APPLLY AND BIND____******
+
+
+1--  https://roadsidecoder.hashnode.dev/javascript-interview-questions-call-bind-and-apply-polyfills-output-based-explicit-binding solved-all-solved
+
+2---  https://climbtheladder.com/call-apply-bind-interview-questions/
+
+
+
+/*Prototype__and Inheritance*/
+
+1-- https://www.explainthis.io/en/swe/most-common-js-prototype-questions
+2-- https://www.hellojavascript.info/docs/general-javascript-questions/prototypes-inheritance/function-prototype#google_vignette
+3-- https://medium.com/typeofnan/front-end-javascript-interview-question-what-is-prototypal-inheritance-f7ea15dfea21
+
+/*ployFill*/
+6-polyfilll
+https://www.linkedin.com/posts/gourav-roy-164660167_leetcode-softwareengineering-datastructures-activity-7198895387070337024-NQPE/?utm_source=share&utm_medium=member_android
+
+
+/*opps i.e classes*/
+//nice questions
+https://testbook.com/interview/javascript-oops-interview-questions
+
+
+
+/*for all other topics like hositing,other hfc and other varaible ,object follow this single whole*/
+(toghest--so use only imp topics first)
+https://www.hellojavascript.info/docs/general-javascript-questions/prototypes-inheritance/function-prototype#google_vignette
+    or
+(compartively easiy)
+https://www.explainthis.io/en/swe/javascript
+
+///most hard aewstion son all topics
+https://www.hellojavascript.info/docs/general-javascript-questions/prototypes-inheritance/function-prototype#google_vignette
+
+
+
+
+

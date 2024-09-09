@@ -24,3 +24,16 @@ console.log(string.normal())
 
 const arr=[3,4,5]
 console.log(arr.men())
+
+
+
+function d(){
+    let r=9
+    
+    return r
+  }
+  d.prototype.sat="l"
+  
+  console.log(d.prototype,d.sat) //out--{sat:l},undefined
+  
+  

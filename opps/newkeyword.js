@@ -12,7 +12,10 @@ var aman=300
 var aman=400 
 console.log(aman)
 but notpossible in let 
-*/ 
+*/ // see if not nderstand above then read this
+    // if we use var then we know parameter is  variable which is defined by var as we have used var for variable name
+    //now now var can be used two times but that is not possible with let --can't be possible let food=food as already used 
+    //for food parameter
 
    
 this.food= food
