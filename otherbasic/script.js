@@ -1,4 +1,4 @@
-console.log("hi i love you js")
+/*console.log("hii i love you js")
 const array=[1,2,3,4]
 
 const aman= array.reduce((acc,curr)=>{
@@ -17,6 +17,8 @@ const user=[
 {name:"janki",age:44},
 {name:"tanki",age:33}
 ]
+
+
 //console.log(user[0].name,user[0]["name"])
 
 const v2=user.reduce(function(acc,curr){
@@ -45,4 +47,22 @@ if(curr.age<34){
 }
 return acc
 },[])
-console.log(reduce)
+console.log(reduce)*/
+
+
+const users=[
+  {name:"Ankir",age:99},
+  {name:"fakir" , age:1000}
+]
+const [{name} , age] = users
+console.log(name)  //Ankir
+console.log(age)  //  {name:"fakir" , age:1000}
+
+
+
+for (let item in users){
+  console.log(users[item])
+}
+
+
+

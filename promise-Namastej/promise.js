@@ -1,3 +1,35 @@
+
+let item=false
+let id=82638
+const call=()=>{
+  const p=new Promise((resolve,reject)=>{
+  if(item){
+    resolve(id)
+  }else{
+    reject("soory")
+  }
+  })
+  return p
+}
+call().then((i)=>{
+  console.log(i)
+  return i
+}).catch((i)=>{
+  console.log("error happenrd",i)
+//to retuen any vlue
+return i
+}).then((i)=>{
+console.log(i,"kk")
+}).catch(()=>{
+  console.log("not happened")
+})
+
+
+
+
+
+
+
 /*consuming promises
 const promises=fetch("https://api.github.com/users/weberankit")
 console.log(promises)
@@ -66,7 +98,7 @@ function proceedtoPayment(){
 //must check all exaple all are uniques 
 ///3rd example
 //ecomerce
-
+/*
 makeOrder().then(function(dataId){
     console.log(dataId)
  return proceedtoPayment(dataId)
@@ -78,7 +110,8 @@ return showOrdersummary(dataId)
 }).catch(function(){
     console.log("below will execute at any case")
 }).then(function(dataId){
-    console.log(dataId)
+    console.log(dataId)//even it promise reject but this will execute
+    //at any case , i.e undefined --rejected
 }).catch(function(){
     console.log("there is error")
 })
@@ -137,3 +170,78 @@ function updateList(idwith){
         }
     })
 }
+
+
+const delay = () => {
+    return new Promise((resolve, reject) => {
+        return setTimeout(() => {
+            resolve('Hello');
+        }, 1000)
+    });
+}
+
+const sayHello = (item) => {
+    console.log('Helvvlo',item);
+}
+/*
+delay().then((item)=>{
+    console.log(item)
+});*/
+/*
+delay().then(sayHello)
+
+*/
+
+
+//for easy understanding 
+//checkout this beolw
+/*
+
+const p1=new Promise((resolve ,reject)=>{
+const string="ee"
+    resolve(string)
+})
+p1.then((item)=>{
+   // console.log(item)
+    return p2(item)
+}).then(function(item){
+  console.log("p2",item)
+return p3(item)
+
+}).then(()=>{//this will be ignored
+    console.log("dd")
+    return p1()
+})
+
+.catch((error)=>{  
+    console.log(error)
+}).then((item)=>{//going to be execute
+    console.log(item,"this is ")
+})
+
+
+.then(()=>{//also going to be execute
+    console.log("pp")
+    return p1()
+})
+.catch(()=>{
+    console.log("thier is error")
+})
+
+
+
+
+const p2=(i)=>{
+    const promise=new Promise((resolve,reject)=>{
+        resolve(i)
+    })
+    return promise
+}
+const p3=(i)=>{
+    const promise=new Promise((resolve,reject)=>{
+        reject("not coming")
+    })
+    return promise
+}
+
+ */
